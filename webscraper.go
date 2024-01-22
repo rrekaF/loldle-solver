@@ -143,18 +143,8 @@ func main(){
 	c.OnHTML("title", func(e *colly.HTMLElement){ //gets the name from the title
 		character.Name = prepName(e.Text)
 	})
-	// c.Visit("https://leagueoflegends.fandom.com/wiki/Diana/LoL")
-	// c.Visit("https://leagueoflegends.fandom.com/wiki/Diana")
-	// fmt.Println(character)
+	
 	c.Visit("https://leagueoflegends.fandom.com/wiki/Shen/LoL")
 	c.Visit("https://leagueoflegends.fandom.com/wiki/Shen")
 	fmt.Println(character)
-	// c.Visit("https://leagueoflegends.fandom.com/wiki/Teemo/LoL")
-	// c.Visit("https://leagueoflegends.fandom.com/wiki/Teemo")
-	// fmt.Println(character)
-	// c.Visit("https://leagueoflegends.fandom.com/wiki/Illaoi/LoL")
-	// fmt.Println(character)
-	// c.Visit("https://leagueoflegends.fandom.com/wiki/Vex/LoL")
-	// c.Visit("https://leagueoflegends.fandom.com/wiki/Vex")
-	// fmt.Println(character)
 }
